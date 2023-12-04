@@ -105,9 +105,7 @@ public class ExpenseTrackerModel {
    */
   public int numberOfListeners() {
     // For testing, this is one of the methods.
-    //
     return obs.size();
-
   }
 
   /**
@@ -137,7 +135,6 @@ public class ExpenseTrackerModel {
    */
   protected void stateChanged() {
     // For the Observable class, this is one of the methods.
-    //
     for (ExpenseTrackerModelListener ob : obs) {
       ob.update(this);
     }
